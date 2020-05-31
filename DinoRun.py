@@ -46,9 +46,9 @@ def draw_text(text, font_name, size, text_color, position_x, position_y, positio
 
     # setting text position
     if position == "midtop":
-        text_rect.midtop = (position_x, position_y)
+        text_rect.midtop = (int(position_x), int(position_y))
     elif position == "topright":
-        text_rect.topright = (position_x, position_y)
+        text_rect.topright = (int(position_x), int(position_y))
 
     window.blit(text_plane, text_rect)  # draws the rendered text on the screen
 
@@ -103,8 +103,8 @@ class Background:
 
     def update(self):
 
-        self.rect0.left -= self.speed
-        self.rect1.left -= self.speed
+        self.rect0.left -= int(self.speed)
+        self.rect1.left -= int(self.speed)
 
         if self.rect0.right < 0:
             self.rect0.left = self.rect1.right
@@ -159,7 +159,7 @@ class Cactus:
         self.rect_0.left = SCREEN_WIDTH
 
         self.rect_1.bottom = GROUND_HEIGHT - 11
-        self.rect_1.left = self.rect_0.right + SCREEN_WIDTH/2
+        self.rect_1.left = self.rect_0.right + int(SCREEN_WIDTH/2)
 
         self.speed = speed
 
@@ -185,8 +185,8 @@ class Cactus:
 
     def update(self):
 
-        self.rect_0.left -= self.speed
-        self.rect_1.left -= self.speed
+        self.rect_0.left -= int(self.speed)
+        self.rect_1.left -= int(self.speed)
 
         if self.rect_0.right < 0:
 
@@ -383,7 +383,7 @@ class GameOver:
     def __init__(self):
         self.replay_image, self.rect = load_image("image/game_over/replay_0.png", 200, 60)
 
-        self.rect.center = (SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
+        self.rect.center = (int(SCREEN_WIDTH/2), int(SCREEN_HEIGHT/2))
 
     def draw(self):
         draw_text("GAME OVER", "font/northcliff_stencil.otf", 80, (255, 0, 0),
