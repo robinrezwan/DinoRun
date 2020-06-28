@@ -4,9 +4,9 @@ A simple 2D game inspired by Google Chrome's dinosaur game.
 
 ## Screenshots:
 
-<a href="https://youtu.be/KDXVqCd4u3Q" target="_blank"><img src="/screenshots/dinorun_1.png" height="300px"/></a>
+<a href="https://youtu.be/KDXVqCd4u3Q"><img src="/screenshots/dinorun_1.png" height="300px"/></a>
 
-<a href="https://youtu.be/KDXVqCd4u3Q" target="_blank"><img src="/screenshots/dinorun_2.png" height="300px"/></a>
+<a href="https://youtu.be/KDXVqCd4u3Q"><img src="/screenshots/dinorun_2.png" height="300px"/></a>
 
 ## Project Information:
 
